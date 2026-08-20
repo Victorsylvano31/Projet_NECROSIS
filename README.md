@@ -47,4 +47,4 @@ Ce projet est un **exercice académique** réalisé dans un environnement de lab
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/votre-repo/necrosis.git
+git clone https://github.com/Victorsylvano31/Projet_NECROSIS.git
