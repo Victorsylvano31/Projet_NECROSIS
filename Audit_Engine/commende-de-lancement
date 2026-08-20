@@ -1,0 +1,2 @@
+# Avec Linux + Bases + Sniff + Dump LSASS
+dist\AuditEngine.exe --user MON_DOMAINE\mon_user --password MonPass --target-domain mon_domaine.local --mode labo --sniff --dump-live --linux-hosts linux_hosts.txt --db-config db_config.json

@@ -1,0 +1,1 @@
+pyinstaller --onefile --noconsole --name AuditEngine --hidden-import=ldap3 --hidden-import=impacket --hidden-import=paramiko --hidden-import=psutil --hidden-import=win32crypt --hidden-import=pypykatz --hidden-import=dsinternals --hidden-import=psycopg2 --hidden-import=pymysql --hidden-import=scapy --collect-all scapy --collect-all impacket --clean main.py
