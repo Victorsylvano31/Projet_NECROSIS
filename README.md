@@ -28,40 +28,7 @@ Ce projet est un **exercice académique** réalisé dans un environnement de lab
 
 ## 🧩 Architecture
 
-Necrosis/
-│
-├── main.py                         # Point d'entrée (argparse)
-├── requirements.txt                # Dépendances
-├── README.md                       # Documentation
-│
-├── core/
-│   ├── __init__.py
-│   ├── config.py                   # Configuration (seuils, signatures EDR)
-│   └── orchestrator.py             # Boucle principale (Détection → Siphon → Export)
-│
-├── modules/
-│   ├── __init__.py
-│   ├── detector.py                 # Fingerprinting OS, EDR, hooks API
-│   ├── mutation.py                 # Obfuscation XOR/Base64, délais aléatoires
-│   └── siphon.py                   # Collecteur global (Windows/Linux/DB/Network)
-│
-├── collectors/
-│   ├── __init__.py
-│   ├── ad_collector.py             # LDAP : users, groups, computers
-│   ├── win_collector.py            # Windows : SAM (VSS), LSASS (comsvcs), DPAPI, CredManager
-│   ├── linux_collector.py          # Linux : /etc/shadow, clés SSH, .env
-│   └── db_collector.py             # PostgreSQL / MySQL : users, privilèges, PII
-│
-├── utils/
-│   ├── __init__.py
-│   ├── network.py                  # ARP Spoofing (Scapy), restauration 120s
-│   ├── crypto.py                   # Chiffrement AES / XOR
-│   └── export.py                   # JSON → ZLIB (-70%) → Base64
-│
-└── payloads/
-    ├── __init__.py
-    └── agent_stub.py               # Stub fileless pour injection mémoire (WinRM/SSH)
-
+<img width="617" height="578" alt="image" src="https://github.com/user-attachments/assets/c7bdcc4b-6672-45d7-8e6f-73dd8b9e6f4f" />
 
 
 ---
